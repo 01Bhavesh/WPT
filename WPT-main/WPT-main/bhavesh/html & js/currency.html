@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>currency converter</title>
+</head>
+<body>
+enter number:<input type = "number" id = "num" />
+<br>
+<br>
+from:<select id = "from">
+<option>select</option>
+<option>R </option>//upee &#8377
+<option>D</option>//ollar &#36 
+<option>P </option>//ound &#163
+<option>E </option>//uro &#8364
+</select>
+&nbsp;
+to:<select id = "to">
+<option>select</option>
+<option>R </option>//upee &#8377
+<option>D</option>//ollar &#36 
+<option>P </option>//ound &#163
+<option>E </option>//uro &#8364
+</select>
+</select>
+<input type = "button" value = "click" onclick = "myFun()" />
+<br>
+<p> value is <span id = "s"></span><p>
+
+
+</body>
+<script>
+function myFun()
+{
+
+let x = parseInt(document.getElementById("num").value)
+
+let y = document.getElementById("from").value
+let a = document.getElementById("to").value
+var result;
+if(y == "R")
+{
+	if(a == "D"){ result = x*0.012}
+	if(a == "P"){ result = x*0.0096}
+	if(a == "E"){ result = x*0.011}
+}
+if(y == "D")
+{
+	if(a == "R"){ result = x*83.43}
+	if(a == "P"){ result = x*0.80}
+	if(a == "E"){ result = x*0.93}
+}
+if(y == "P")
+{
+	if(a == "D"){ result = x*1.15}
+	if(a == "R"){ result = x*104.69}
+	if(a == "E"){ result = x*1.16}
+}
+if(y == "E")
+{
+	if(a == "D"){ result = x*1.08}
+	if(a == "P"){ result = x*0.86}
+	if(a == "R"){ result = x*89.88}
+}
+
+document.getElementById("s").innerHTML = result
+}
+</script>
+</html>
