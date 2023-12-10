@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+validation 10 size
+</title>
+<script>
+function myFun()
+{
+	let x = document.getElementById("t").value
+	if(x.trim().length == 10)
+	{
+		let form = document.getElementById("f")
+		form.submit()
+	}
+	else
+	{
+		location.href = "formValidExact10.html"
+	}
+}
+</script>
+</head>
+<body>
+<form id = "f" action = "login.html">
+EnterText:<input type = "text" id = "t" value = "text" pattern = "[A-Z][a-z]*" /> 
+<input type = "button" value = "click" onclick="myFun()" />
+</form>
+</body>
+</html>

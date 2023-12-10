@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>text converter
+</title>
+</head>
+<body>
+enter text:<input type = "text" id = "tstr" />
+<br><br>
+options:<br>
+<lable>
+UpperCase:<input type = "radio" id = "u" name = "s" onclick = "fun()" />
+</label>
+<label>
+LowerCase:<input type = "radio" id = "l" name= "s" onclick = "fun()" />
+</label>
+<lable>
+TitleCase<input type = "radio" id = "t" name = "s" onclick = "fun()" />
+</label>
+<p id = "p"><p>
+<script>
+function fun()
+{
+	let str = document.getElementById("tstr").value
+	
+	let u = document.getElementById("u").checked
+	let l = document.getElementById("l").checked
+	let t = document.getElementById("t").checked
+	
+	let result = str;
+	
+	if(u)
+	{
+		result = str.toUpperCase()
+	}
+	if(l)
+	{
+		result = str.toLowerCase()
+	}
+	if(t)
+	{
+		let ch = str.charAt(0).toUpperCase()
+		let str1 = str.substring(1)
+		
+		result = ch+str1
+	}
+	
+	document.getElementById("p").innerHTML = result
+}
+
+</script>
+</body>
+</html>

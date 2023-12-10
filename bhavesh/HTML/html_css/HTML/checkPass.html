@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>chech password
+</title>
+</head>
+
+<body>
+<br>
+Username:<input type="text" />
+<br><br>
+Password:<input type = "password" id = "pass"/>
+<br>
+<input type = "button" value = "ok" onclick ="mypass()" />
+<br>
+<script>
+function mypass()
+{
+	let x = document.getElementById("pass");
+	if(x.type === "password")
+	{
+		 x.type = "text"
+	}
+	else
+	{
+	 x.type = "password"
+	}
+}
+</script>
+</body>
+</html>

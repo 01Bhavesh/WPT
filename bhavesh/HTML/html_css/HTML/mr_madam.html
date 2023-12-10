@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Mr. & Madam</title>
+</head>
+<body>
+fname:<input type = "text" id = "f" />
+<br><br>
+lname:<input type = "test" id = "l" />
+<br>
+gender:
+Male:<input id = "ma" type = "radio" name = "r" onclick = "myFun1()" />
+Female:<input id = "fe" type = "radio" name = "r" onclick = "myFun1()" />
+<p id = "p"> <p>
+</body>
+<script>
+function myFun1()
+{
+	var x = document.getElementById("f").value
+	var y = document.getElementById("l").value
+	
+	let a = document.getElementById("ma").checked
+	let b = document.getElementById("fe").checked
+	
+	let f1 = x.charAt(0).toUpperCase()
+	let str1 = x.substring(1)
+	
+	let f2 = y.charAt(0).toUpperCase()
+	let str2 = y.substring(1)
+	
+	x = f1+str1
+	y = f2+str2
+	if (a)
+	{
+	document.getElementById("p").innerHTML = `Mr. ${y} ${x} `
+	}
+	if(b)
+	{
+	document.getElementById("p").innerHTML = `Madam ${y} ${x} `
+	}
+}
+/*
+function myFun2()
+{
+var x = document.getElementById("f").value
+var y = document.getElementById("l").value
+	
+	let f1 = x.charAt(0).toUpperCase()
+	let str1 = x.substring(1)
+	
+	let f2 = y.charAt(0).toUpperCase()
+	let str2 = y.substring(1)
+	
+	x = f1+str1
+	y = f2+str2
+	
+	document.getElementById("p").innerHTML = `madam ${y} ${x} `
+}*/
+</script>
+</html>

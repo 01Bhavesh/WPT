@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>login page
+		</title>
+	</head>
+	<body>
+	<div>
+		Username:<input type = "text" id = "username" /></div>
+		<br><div>
+		Password:<input type = "password" id = "password"/>
+		<br>
+		<input type = "button" value = "click" onclick = "myFunction()" />
+		</div>
+		<script>
+		function myFunction()
+		{
+			let x = document.getElementById("username")
+			let y = document.getElementById("password")
+			if(x.value === "bhavesh" && y.value === "bhavesh")
+			{
+				location.href = "checkPass.html";
+			}
+			else
+			{
+			location.href = "login.html";
+			}
+		}</script>
+	</body>
+</html>

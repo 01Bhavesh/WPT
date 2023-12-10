@@ -1,0 +1,65 @@
+name :- GHARAT BHAVESH SAKHARAM
+
+prn :- 230945920027
+
+emailid1 :- gharatbhavesh20@gmail.com
+emailid2 :- gharatbhavesh2029@gmail.com
+
+dob:- 29-03-2000
+
+mob no1 :- 8850829549
+mob no2 :- 9653265015
+
+skype id :- live:.cid.6f80695779315499
+
+address (correspondence) :- Gokhalenagat Chawl no 6/51NR amar mandal pune Gokhalenagar 411016
+address (permanent) :- Sethbandar B-60, Gharapuri Uran, Raigarh, Maharashtra-400702
+
+10th :-end-March-2015
+total marks-500  obtain-392
+
+12th:-end-Feb-2017
+total marks-650  obtain-409
+
+BSC:- 
+year of admission:-2017
+year of passing:-2020
+college- Karmaveer Bhaurao Patil college, vashi
+university- University Of Mumbai
+	marks		obtain
+ sem 1-	 900		   520
+sem 2-	 900		   571
+sem 3 -	1000		  682
+sem 4-	1000		  703
+sem 5-	 800		  576
+sem 6-	 800		  654
+
+MSC:-year of admission:-2021
+year of passing:-2023
+college- The Institute of Science Mumbai
+university-Dr. Homi Bhabha State University ,Mumbai
+
+	marks		obtain
+sem1-	700		 420 
+sem2-	700  		 472
+sem3-	700		 494
+sem4-	700		 487
+
+msc overall=66.89
+ 
+religion:-hindu
+regional languages:-Marathi, Hindi, English
+hobbies - swimming
+
+
+project:-name-Smart parking system in metropolitan city
+Desciption-this web application will provide the facility to find the parking area in the
+provided location. It will also help to show the available spaces in the given parking slot as
+per the vehicle type
+Objective-Smart Parking In Metropolitian Cities is a parking guidance and reservation
+ system in towns. Looking for space to park vehicle can be really hectic in busy town
+ in regard to walking distance to your destination from your vehicle, safety of the vehicle
+SCOPE :
+This web application provides the facility to book the online parking slot close to user 
+destination. Before that user have to register and login in website with help of mobile
+ number or email id.

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>form validation
+</title>
+</head>
+<script>
+function myFun()
+{
+	let x = document.getElementById("t").value
+	if(x.trim().length == 0)
+	{
+		alert("not valid")
+	}
+	else
+	{
+		let form = document.getElementById("fa")
+		form.submit()
+	}
+}
+</script>
+<body>
+<form action = "login.html" id = "fa">
+text :<input type = "text" id = "t" />
+<br><br>
+<input type = "button" value = "click" onclick = "myFun()" />
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>drop down</title></head>
+<body>
+<h3>months</h3>
+<select id ="num" onchange="mymonth()">
+<option>num</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+<p id = "p"><p>
+</body>
+<script>
+function mymonth()
+{
+	let x = parseInt(document.getElementById("num").value)
+	
+	let y ;
+	switch(x)
+	{
+	case 1:
+	y="january";
+	break;
+	case 2:
+	y = "february";
+	break;
+	case 3:
+	y = "march";
+	break;
+	case 4:
+	y="april";
+	break;
+	case 5:
+	y = "may";
+	break;
+	case 6:
+	y = "june";
+	break;
+	case 7:
+	y="july";
+	break;
+	case 8:
+	y = "augest";
+	break;
+	case 9:
+	y = "september";
+	break;
+	case 10:
+	y="october";
+	break;
+	case 11:
+	y = "november";
+	break;
+	case 12:
+	y = "december";
+	break;
+	}
+	document.getElementById("p").innerHTML = y
+}
+</script>
+</html>

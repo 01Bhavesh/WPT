@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>longin</title>
+</head>
+<body>
+<h2 align = "center"> Longin Page </h2>
+Username:<input type = "text" id = "user" />
+<br><br>
+Password:<input type = "password" id = "pass" />
+<label>
+<input type = "checkbox" onclick = "myPass()"/>show password
+</label>
+<br>
+<br>
+<input type = "button" value = "login" onclick = "myRegister()" />
+
+<script>
+function myPass()
+{
+	let x = document.getElementById("pass")
+	if(x.type === "password")
+	{
+		x.type = "text";
+	}
+	else
+	{
+		x.type = "password"
+	}
+}
+function myRegister()
+{
+
+	let x = document.getElementById("user") 
+	let y = document.getElementById("pass")
+	if(x.value === "bhavesh" && y.value === "bhavesh")
+	{
+		location.href = "registration.html";
+	}
+	else
+	{
+		location.href = "prac1.html";
+	}
+}
+</script>
+</body>
+</html>
