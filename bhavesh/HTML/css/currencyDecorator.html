@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>currency converter</title>
+<style>
+#d
+{
+background-color:purple;
+border-style : solid
+border-color : blue ; 
+font-style : italic
+}
+.don
+{
+border-color : blue ; 
+font-style : bold
+}
+*{
+	background-color : lightblue
+}
+</style>
+</head>
+<body>
+<div>
+enter number:<input type = "number" id = "num" />
+</div>
+<br>
+<br>
+<div id = "d">
+from:<select id = "from">
+<option >select</option>
+<option value = "1">Rupee &#8377 </option>
+<option value = "2">Dollar &#36 </option>
+<option value = "3">Pound &#163 </option>
+<option value = "4">Euro &#8364 </option>
+</select>
+</div>
+&nbsp;
+<div class = "don">
+to:<select id = "to">
+<option>select</option>
+<option value = "1">Rupee &#8377 </option>
+<option value = "2">Dollar &#36 </option>
+<option value = "3">Pound &#163 </option>
+<option value = "4">Euro &#8364 </option>
+</select>
+</div>
+<br><br>
+<input type = "button" value = "click" onclick = "myFun()" />
+<br>
+<p style = "padding : 20px; font-size : 2em ; font-style:bold text-align : center; font-style:italic" > value is <span id = "s"></span><p>
+
+
+</body>
+<script>
+function myFun()
+{
+
+let x = parseInt(document.getElementById("num").value)
+
+let y = document.getElementById("from").value
+let a = document.getElementById("to").value
+var result;
+if(y == 1)
+{
+	if(a == 2){ result = x*0.012}
+	if(a == 3){ result = x*0.0096}
+	if(a == 4){ result = x*0.011}
+}
+if(y == 2)
+{
+	if(a == 1){ result = x*83.43}
+	if(a == 3){ result = x*0.80}
+	if(a == 4){ result = x*0.93}
+}
+if(y == 3)
+{
+	if(a == 2){ result = x*1.15}
+	if(a == 1){ result = x*104.69}
+	if(a == 4){ result = x*1.16}
+}
+if(y == 4)
+{
+	if(a == 2){ result = x*1.08}
+	if(a == 3){ result = x*0.86}
+	if(a == 1){ result = x*89.88}
+}
+
+document.getElementById("s").innerHTML = result
+}
+</script>
+</html>

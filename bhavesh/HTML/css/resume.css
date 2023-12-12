@@ -1,0 +1,28 @@
+.h1
+{
+align : center;
+background-color : aqua;
+border-color : blue
+}
+.h2
+{
+background-color : blue;
+font-style : italic
+}
+.b1
+{
+background-color: lightblue;
+            border-color: blue;
+            border-width: 4px;
+            border-style: solid;
+            margin-top: 50px;
+	font-size:1.2em;
+	font-style:italic;
+	font-weight:bold
+}
+.b2
+{
+	font-size:1.2em;
+	font-style:italic;
+	font-weight:bold
+}

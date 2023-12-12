@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Registration
+</title>
+</head>
+<body>
+<form action = "prac1.html" method = "get" >
+<table border = "1" height = "500" width = "500">
+<thead>
+<tr>
+<th align = "center" style = "font-style : italic ;background-color:lightblue">
+REGISTRATION FORM
+</th>
+</tr>
+</thead>
+<tbody style = "background-color:aqua; border-color:blue ; font : italic">
+
+<tr>
+<td>
+<div style = "font-style : italic">
+Firstname:<input type = "text" pattern = "^[A-Z][a-z]*" title = "name" /> </td>
+</div>
+</tr><tr><td>
+<div style = "font-style : italic">
+Lastname:<input type = "text" pattern="^[A-Z][a-z]*" />
+</div>
+</td></tr>
+
+<tr>
+<td>
+DOB:<input type = "date" min = "1990-01-01" max="2023-01-01" />
+
+</td></tr>
+<div style = "background-color:lightyellow">
+<tr><td>
+<div style = "font-style : italic ; font-style : solid">
+Address:<textarea rows = "5" cols = "25" minlength = "5" maxlength = "20" ></textarea>
+</div>
+</td></tr>
+</div>
+<tr><td>
+<div sytle = "font-size:1.2em ; font-weight:bold ; border-width : 2px">
+State:<select>
+<option>states</option>
+<option>Maharashtra</option>
+<option>Goa</option>
+<option>Delhi</option>
+<option>kolkata</option>
+<option>MP</option>
+</select>
+</div>
+</td></tr>
+<tr><td>
+<div style = " background-color: lightblue; font-style:italic">
+Education:<br>
+SSC<input type = "checkbox" />
+HSC<input type = "checkbox" />
+graduation: <input type = "checkbox" / >
+postgraduation <input type = "checkbox" / >
+enginering<input type = "checkbox" />
+</div>
+</td></tr>
+<tr>
+<td>
+<div style = "font-style:italic; text-align:center">
+Gender:<br>
+Male<input type = "radio" name = "x" />
+Female<input type = "radio" name = "x" />
+</div>
+</td></tr>
+<tr>
+<td>
+<input type = "submit" value = "ok" />
+</td></tr>
+<tr><td>
+<input type = "submit" value = "cancel"/>
+</td></tr>
+</tbody>
+</table>
+</form>
+</body>
+</html>
