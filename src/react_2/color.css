@@ -1,0 +1,14 @@
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+
+}
+.inner{
+    border: 2px rgb(10, 1, 19);
+    height: fit-content;
+    padding: 5px;
+    width: fit-content;
+}
